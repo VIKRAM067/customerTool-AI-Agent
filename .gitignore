@@ -1,0 +1,77 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# ---- Virtualenvs ----
+.venv/
+venv/
+env/
+
+# ---- Secrets (commit .env.example only) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ---- Tooling caches ----
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ---- Local data / volumes ----
+pgdata/
+redisdata/
+*.sqlite
+*.sqlite3
+*.db
+data/
+logs/
+*.log
+
+# ---- Evals: keep datasets, ignore run outputs ----
+evals/results/
+evals/runs/
+.deepeval/
+
+# ---- Node / UI (if Next.js) ----
+node_modules/
+.next/
+out/
+ui/.env*
+!ui/.env.example
+
+# ---- Streamlit ----
+.streamlit/secrets.toml
+
+# ---- Terraform (if used) ----
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+
+# ---- Docker ----
+docker-compose.override.yml
+
+# ---- Model / embedding caches ----
+.cache/
+models/
+*.gguf
+*.safetensors
+
+# ---- IDE / OS ----
+.vscode/
+!.vscode/settings.json.example
+.idea/
+.DS_Store
+Thumbs.db
